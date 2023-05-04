@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+Database file #1: main.bib
+Warning--empty journal in kiesling1998language
+Warning--there's a number but no series in labov1972sociolinguistic
+You've used 32 entries,
+            2773 wiz_defined-function locations,
+            777 strings with 12002 characters,
+and the built_in function-call counts, 17755 in all, are:
+= -- 1615
+> -- 1054
+< -- 29
++ -- 355
+- -- 322
+* -- 1378
+:= -- 2595
+add.period$ -- 116
+call.type$ -- 32
+change.case$ -- 199
+chr.to.int$ -- 31
+cite$ -- 66
+duplicate$ -- 845
+empty$ -- 1407
+format.name$ -- 366
+if$ -- 3876
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 31
+newline$ -- 177
+num.names$ -- 130
+pop$ -- 465
+preamble$ -- 1
+purify$ -- 170
+quote$ -- 0
+skip$ -- 694
+stack$ -- 0
+substring$ -- 641
+swap$ -- 206
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 337
+warning$ -- 2
+while$ -- 150
+width$ -- 0
+write$ -- 444
+(There were 2 warnings)

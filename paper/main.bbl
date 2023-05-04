@@ -1,0 +1,239 @@
+\begin{thebibliography}{32}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Argamon and Koppel(2010)]{argamon2010rest}
+Shlomo Argamon and Moshe Koppel.
+\newblock {T}he rest of the story: {F}inding meaning in stylistic variation.
+\newblock In \emph{The Structure of Style}, pages 79--112. Springer, 2010.
+
+\bibitem[Ashok et~al.(2013)Ashok, Feng, and Choi]{vikasnovels}
+Vikas Ashok, S.~Feng, and Y.~Choi.
+\newblock Success with style: Using writing style to predict the success of
+  novels.
+\newblock \emph{EMNLP 2013 - 2013 Conference on Empirical Methods in Natural
+  Language Processing, Proceedings of the Conference}, pages 1753--1764, 01
+  2013.
+
+\bibitem[Bollen et~al.(2011)Bollen, Mao, and Zeng]{bollen2011twitter}
+Johan Bollen, Huina Mao, and Xiaojun Zeng.
+\newblock {T}witter mood predicts the stock market.
+\newblock \emph{Journal of computational science}, 2\penalty0 (1):\penalty0
+  1--8, 2011.
+
+\bibitem[Cao et~al.(2020)Cao, Shui, Pan, Kan, Liu, and Chua]{cao2020expertise}
+Yixin Cao, Ruihao Shui, Liangming Pan, Min{-}Yen Kan, Zhiyuan Liu, and
+  Tat{-}Seng Chua.
+\newblock {E}xpertise style transfer: {A} new task towards better communication
+  between experts and laymen.
+\newblock In Dan Jurafsky, Joyce Chai, Natalie Schluter, and Joel~R. Tetreault,
+  editors, \emph{Proceedings of the 58th Annual Meeting of the Association for
+  Computational Linguistics, {ACL} 2020, Online, July 5-10, 2020}, pages
+  1061--1071. Association for Computational Linguistics, 2020.
+
+\bibitem[Cho et~al.(2014)Cho, van Merri{\"e}nboer, Gulcehre, Bahdanau,
+  Bougares, Schwenk, and Bengio]{cho2014learning}
+Kyunghyun Cho, Bart van Merri{\"e}nboer, Caglar Gulcehre, Dzmitry Bahdanau,
+  Fethi Bougares, Holger Schwenk, and Yoshua Bengio.
+\newblock {L}earning phrase representations using {RNN} {E}ncoder--{D}ecoder
+  for statistical machine translation.
+\newblock In \emph{Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 1724--1734, 2014.
+
+\bibitem[Coupland(2007)]{coupland2007style}
+Nikolas Coupland.
+\newblock \emph{{S}tyle: {L}anguage variation and identity}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem[Dai et~al.(2019)Dai, Liang, Qiu, and Huang]{dai-etal-2019-style}
+Ning Dai, Jianze Liang, Xipeng Qiu, and Xuanjing Huang.
+\newblock Style transformer: Unpaired text style transfer without disentangled
+  latent representation.
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics}, pages 5997--6007, Florence, Italy, July 2019.
+  Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/P19-1601}.
+\newblock URL \url{https://aclanthology.org/P19-1601}.
+
+\bibitem[Eckert and Rickford(2001)]{eckert2001style}
+Penelope Eckert and John~R Rickford.
+\newblock \emph{{S}tyle and sociolinguistic variation}.
+\newblock Cambridge University Press, 2001.
+
+\bibitem[Gan et~al.(2017)Gan, Gan, He, Gao, and Deng]{gan2017stylenet}
+Chuang Gan, Zhe Gan, Xiaodong He, Jianfeng Gao, and Li~Deng.
+\newblock {S}tyle{N}et: {G}enerating attractive visual captions with styles.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 3137--3146, 2017.
+
+\bibitem[Hu et~al.(2018)Hu, Yang, Liang, Salakhutdinov, and
+  Xing]{hu2018controlled}
+Zhiting Hu, Zichao Yang, Xiaodan Liang, Ruslan Salakhutdinov, and Eric~P. Xing.
+\newblock Toward controlled generation of text, 2018.
+
+\bibitem[Kashyap et~al.(2022)Kashyap, Hazarika, Kan, Zimmermann, and
+  Poria]{kashyap2022different}
+Abhinav~Ramesh Kashyap, Devamanyu Hazarika, Min-Yen Kan, Roger Zimmermann, and
+  Soujanya Poria.
+\newblock So different yet so alike! constrained unsupervised text style
+  transfer, 2022.
+
+\bibitem[Kiesling and Schilling-Estes(1998)]{kiesling1998language}
+Scott~F Kiesling and Natalie Schilling-Estes.
+\newblock {L}anguage style as identity construction: {A} footing and framing
+  approach.
+\newblock 1998.
+
+\bibitem[Klein et~al.(2017)Klein, Kim, Deng, Senellart, and
+  Rush]{klein-etal-2017-opennmt}
+Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, and Alexander Rush.
+\newblock {O}pen{NMT}: Open-source toolkit for neural machine translation.
+\newblock In \emph{Proceedings of {ACL} 2017, System Demonstrations}, pages
+  67--72, Vancouver, Canada, July 2017. Association for Computational
+  Linguistics.
+\newblock URL \url{https://aclanthology.org/P17-4012}.
+
+\bibitem[Koehn(2005)]{koehn-2005-europarl}
+Philipp Koehn.
+\newblock {E}uroparl: A parallel corpus for statistical machine translation.
+\newblock In \emph{Proceedings of Machine Translation Summit X: Papers}, pages
+  79--86, Phuket, Thailand, September 13-15 2005.
+\newblock URL \url{https://aclanthology.org/2005.mtsummit-papers.11}.
+
+\bibitem[Koppel et~al.(2001)Koppel, Argamon, and
+  Shimoni]{koppel2001automatically}
+M~Koppel, S~Argamon, and AR~Shimoni.
+\newblock {A}utomatically determining the gender of a text's author.
+\newblock \emph{Bar-Ilan University Technical Report BIU-TR-01-32}, 2001.
+
+\bibitem[Labov(1972)]{labov1972sociolinguistic}
+William Labov.
+\newblock \emph{{S}ociolinguistic patterns}.
+\newblock Number~4. University of Pennsylvania Press, 1972.
+
+\bibitem[Lahiri et~al.(2011)Lahiri, Mitra, and Lu]{lahiri2011informality}
+Shibamouli Lahiri, Prasenjit Mitra, and Xiaofei Lu.
+\newblock {I}nformality judgment at sentence level and experiments with
+  formality score.
+\newblock In \emph{International Conference on Intelligent Text Processing and
+  Computational Linguistics}, pages 446--457. Springer, 2011.
+
+\bibitem[Li et~al.(2018)Li, Jia, He, and Liang]{li-etal-2018-delete}
+Juncen Li, Robin Jia, He~He, and Percy Liang.
+\newblock Delete, retrieve, generate: a simple approach to sentiment and style
+  transfer.
+\newblock In \emph{Proceedings of the 2018 Conference of the North {A}merican
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 1 (Long Papers)}, pages 1865--1874, New Orleans,
+  Louisiana, June 2018. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/N18-1169}.
+\newblock URL \url{https://aclanthology.org/N18-1169}.
+
+\bibitem[Marcu and Wong(2002)]{marcu-wong-2002-phrase}
+Daniel Marcu and Daniel Wong.
+\newblock A phrase-based,joint probability model for statistical machine
+  translation.
+\newblock In \emph{Proceedings of the 2002 Conference on Empirical Methods in
+  Natural Language Processing ({EMNLP} 2002)}, pages 133--139. Association for
+  Computational Linguistics, July 2002.
+\newblock \doi{10.3115/1118693.1118711}.
+\newblock URL \url{https://aclanthology.org/W02-1018}.
+
+\bibitem[Nguyen et~al.(2013)Nguyen, Gravel, Trieschnigg, and
+  Meder]{nguyen2013old}
+Dong Nguyen, Rilana Gravel, Dolf Trieschnigg, and Theo Meder.
+\newblock "{H}ow old do you think {I} am?" {A} study of language and age in
+  twitter.
+\newblock In \emph{Seventh International AAAI Conference on Weblogs and Social
+  Media}, 2013.
+
+\bibitem[Papineni et~al.(2002)Papineni, Roukos, Ward, and
+  Zhu]{papineni2002bleu}
+Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu.
+\newblock {BLEU}: {A} method for automatic evaluation of machine translation.
+\newblock In \emph{Proceedings of the 40th annual meeting on association for
+  computational linguistics}, pages 311--318. Association for Computational
+  Linguistics, 2002.
+
+\bibitem[Pavlopoulos et~al.(2019)Pavlopoulos, Thain, Dixon, and
+  Androutsopoulos]{pavlopoulos2019convai}
+John Pavlopoulos, Nithum Thain, Lucas Dixon, and Ion Androutsopoulos.
+\newblock {C}onv{AI} at {S}em{E}val-2019 task 6: {O}ffensive language
+  identification and categorization with perspective and {BERT}.
+\newblock In \emph{Proceedings of the 13th international Workshop on Semantic
+  Evaluation}, pages 571--576, 2019.
+
+\bibitem[Prabhumoye et~al.(2018{\natexlab{a}})Prabhumoye, Tsvetkov, Black, and
+  Salakhutdinov]{prabhumoye2018style2}
+Shrimai Prabhumoye, Yulia Tsvetkov, Alan~W Black, and Ruslan Salakhutdinov.
+\newblock {S}tyle transfer through multilingual and feedback-based
+  back-translation.
+\newblock \emph{CoRR}, 2018{\natexlab{a}}.
+
+\bibitem[Prabhumoye et~al.(2018{\natexlab{b}})Prabhumoye, Tsvetkov,
+  Salakhutdinov, and Black]{prabhumoye2018style}
+Shrimai Prabhumoye, Yulia Tsvetkov, Ruslan Salakhutdinov, and Alan~W Black.
+\newblock {S}tyle transfer through back-translation.
+\newblock In \emph{Proceedings of the 56th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 866--876,
+  2018{\natexlab{b}}.
+
+\bibitem[Preotiuc-Pietro et~al.(2016)Preotiuc-Pietro, Xu, and
+  Ungar]{preotiuc2016discovering}
+Daniel Preotiuc-Pietro, Wei Xu, and Lyle Ungar.
+\newblock {D}iscovering user attribute stylistic differences via paraphrasing.
+\newblock In \emph{Thirtieth AAAI Conference on Artificial Intelligence}, 2016.
+
+\bibitem[Rao et~al.(2010)Rao, Yarowsky, Shreevats, and
+  Gupta]{rao2010classifying}
+Delip Rao, David Yarowsky, Abhishek Shreevats, and Manaswi Gupta.
+\newblock {C}lassifying latent user attributes in twitter.
+\newblock In \emph{Proceedings of the 2nd international workshop on Search and
+  mining user-generated contents}, pages 37--44, 2010.
+
+\bibitem[Schmidt(2019)]{schmidt2019recurrent}
+Robin~M. Schmidt.
+\newblock Recurrent neural networks (rnns): A gentle introduction and overview,
+  2019.
+
+\bibitem[Schwenk(2007)]{SCHWENK2007492}
+Holger Schwenk.
+\newblock Continuous space language models.
+\newblock \emph{Computer Speech and Language}, 21\penalty0 (3):\penalty0
+  492--518, 2007.
+\newblock ISSN 0885-2308.
+\newblock \doi{https://doi.org/10.1016/j.csl.2006.09.003}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0885230806000325}.
+
+\bibitem[Sheang and Saggion(2021)]{sheang-saggion-2021-controllable}
+Kim~Cheng Sheang and Horacio Saggion.
+\newblock Controllable sentence simplification with a unified text-to-text
+  transfer transformer.
+\newblock In \emph{Proceedings of the 14th International Conference on Natural
+  Language Generation}, pages 341--352, Aberdeen, Scotland, UK, August 2021.
+  Association for Computational Linguistics.
+\newblock URL \url{https://aclanthology.org/2021.inlg-1.38}.
+
+\bibitem[Sheikha and Inkpen(2010)]{sheikha2010automatic}
+Fadi~Abu Sheikha and Diana Inkpen.
+\newblock {A}utomatic classification of documents by formality.
+\newblock In \emph{Proceedings of the 6th international conference on natural
+  language processing and knowledge engineering (nlpke-2010)}, pages 1--5.
+  IEEE, 2010.
+
+\bibitem[Zhang et~al.(2021)Zhang, Lipton, Li, and Smola]{zhang2019dive}
+Aston Zhang, Zachary~C. Lipton, Mu~Li, and Alexander~J. Smola.
+\newblock Dive into deep learning.
+\newblock \emph{CoRR}, abs/2106.11342, 2021.
+\newblock URL \url{https://arxiv.org/abs/2106.11342}.
+
+\bibitem[Zhao et~al.(2018)Zhao, Kim, Zhang, Rush, and
+  LeCun]{zhao2018adversarially}
+Jake Zhao, Yoon Kim, Kelly Zhang, Alexander~M. Rush, and Yann LeCun.
+\newblock Adversarially regularized autoencoders, 2018.
+
+\end{thebibliography}
