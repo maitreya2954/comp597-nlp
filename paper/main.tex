@@ -57,9 +57,7 @@ Text style transfer refers to the process of changing the style of a sentence by
 
 Over the course of a decade or two, the work on the subject evolved from a few articles to an active research area. The majority of text style transfer approaches are based on deep neural networks. The research that address the automatic adjustment of a written text's style are crucial to this review. We begin by introducing numerous text styles that have been the subject of text style transfer during the last decade.
 
-\textbf{TODO: A paragraph outlining the paper. Ignore next paragraph}
-
-The paper is organized as follows. After the introductory section, Section~\ref{sec:textual_style} provides a description of various text styles that have been in the focus of the selected research papers. Section~\ref{sec:style_transfer_for_text} gives a formalization of text style transfer and discusses the publicly available datasets suitable for the task at hand. The discussion of a set of measures, which have been proposed as meaningful criteria for evaluating style transfer models, is also presented. Beginning with a brief introduction of several deep neural networks in Section~\ref{sec:deep_neural_networks_for_text_generation}, the discussion of state-of-the-art style transfer methodologies using deep learning is presented in Section~\ref{sec:methods_for_style_transfer}. Section~\ref{sec:challenges} reflects on the challenges style transfer faces and casts light on potential research directions that are expected to further advance the field. Section~\ref{sec:conclusion} concludes the paper.
+The paper is organized as follows. After the introductory section, Section~\ref{sec:textual_style} provides a description of various text styles that have been in the focus of the selected research papers along with the breif explanation of style transfer. Section~\ref{sec:style_class} provides more details on the initial attempts to separate style from the context using statistical methods. Later, in Section~\ref{sec:rnn} the paper gives a simple overview of Recurrent Neural Networks which are now the current state of text style transfer. Finally, we give more details about the recent research work in the domain of Text Style Transfer over the past few years in the Section~\ref{sec:style_transfer}. The discussion of a set of measures, which have been proposed as meaningful criteria for evaluating style transfer models, is also presented. Section~\ref{sec:conclusion} concludes the paper.
 
 \section{Text Style and Transfer}
 \label{sec:textual_style}
@@ -111,6 +109,7 @@ Text style transfer refers to the process of rewriting a sentence in a new style
 \end{table*}
 
 \section{Style Classification}
+\label{sec:style_class}
 
 Due to lack of advances in deep learning neural networks, previous techniques to processing text style were primarily statistical study of language semantics. These statistical methods were used to categorize the documents into different styles. The papers included for this review are concerned with the concept of formality in language and its applications in natural language processing.
 
@@ -124,7 +123,7 @@ Preotiuc-Pietro et al.,~\cite{preotiuc2016discovering} examine whether there are
 
 Lahiri et al., Sheikha et al.,  Ashok et al. and Preotiuc-Pietro et al. demonstrate the diverse applications of formality and style analysis in natural language processing. By analyzing the linguistic features of text, researchers can develop methods for automatically classifying documents, predicting the success of novels, judging the formality of individual sentences and even predicting user attributes. These techniques have the potential to be used in a wide range of fields, from information retrieval and document management to literary analysis and the publishing industry.
 
-\section{RNN}
+\section{RNN}\label{sec:rnn}
 
 In next section, we will study the use of machine learning and deep learning techniques in order to transfer or learn the style of the text. The majority of the research articles that are utilized for machine translation make use of some form of Recurrent Neural Networks (RNNs)~\cite{schmidt2019recurrent}. 
 
@@ -151,6 +150,7 @@ We may use the mathematical notation proposed in \cite{zhang2019dive} to explain
 \end{equation}
 
 \section{Style Transfer}
+\label{sec:style_transfer}
 
 Cho et al.~\cite{cho2014learning} use RNN to learn phrase representation to capture meaning of entire phrases instead of individual words by encoding a variable length input sequence and then decode the output sequences. The authors also propose a novel hidden unit which is motivated by LSTM unit but is much simpler to compute and implement. This proposed RNN is trained on a large bilingual corpora including Europarl (61M words), news com- mentary (5.5M) and UN (421M) to learn the translation probability of an english phrase to a corresponding french phrase. This model is then used as part of phrase-based statistical machine translation (SMT) framework~\cite{koehn-2005-europarl,marcu-wong-2002-phrase} by scoring each phrase pair in the phrase table. The authors observe that using CSLM~\cite{SCHWENK2007492} and word penality where we penalizes the number of unknown words to neural networks along with RNN has the highest performance in terms of BLEU scores~\cite{papineni2002bleu} among different configurations that were tested to translate phrases from English to French.
 
@@ -167,8 +167,32 @@ StyleNet training uses GAN's adversarial loss and CVAE's reconstruction loss. St
 
 Prabhumoye et al.~\cite{prabhumoye2018style} propose style transfer of text using back-translation. Back-translation is used to learn two inverse mappings: one from the style of a target sentence to the content of a source sentence, and the other from the content to the original source phrase. By matching the source sentence's content, these inverse mappings increase style transfer. The authors first transfer a sentence to one pivot language and then utilize the pivot language's encoding to train the generative models that correspond to the two styles. They also employ feedback from a pre-trained classifier to direct the generators toward the desired style. This model is called Back-Translated Style Transfer (BST). 
 
-Later in another study~\cite{prabhumoye2018style2} in 2018, Prabhumoye et al. propose an extension to BST to improve the its state-of-the-art performance. They also use feedback mechanism is employed to iteratively refine the style transfer output by allowing users to provide feedback on the generated sentences. The authors analyze the performance of the improved model, MBST+F, along with baseline and BST model on gender transfer, political slant transfer and sentiment modification tasks and observes that the MBST+F performs much better compared to other models.
+Later in another study~\cite{prabhumoye2018style2} in 2018, Prabhumoye et al. propose an extension to BST to improve the its state-of-the-art performance. They also use feedback mechanism is employed to iteratively refine the style transfer output by allowing users to provide feedback on the generated sentences. The authors analyze the performance of the improved model, MBST+F, along with baseline and BST model on gender transfer, political slant transfer and sentiment modification tasks and observes that the MBST+F performs much better compared to other models. Table~\ref{tab:2018} along with Figure~\ref{fig:eval2018} shows that the results of this model with different prompts during evaluation. 
 
+\begin{table}[h]
+\begin{tabular}{|l|l|l|c|}
+\hline
+\textbf{Dataset} & \textbf{Model} & \textbf{Prompt} & \textbf{Accuracy (\%)} \\ \hline
+sst-2 & roberta-large & AgentMediaGradeOfficials Grade & 94.2 \\ \hline
+sst-5 & roberta-large & iciticititableually immediately & 45.2 \\ \hline
+agnews & roberta-large & Alert Blog Dialogue Diary Accountability & 82.0 \\ \hline
+dbpedia & roberta-large & CommonExamplesSenate Similar comparable & 86.1 \\ \hline
+subj & roberta-large & BufferActionDialogDialog downright & 84.6 \\ \hline
+yahoo & roberta-large & AlertSource mentioning Besidesadays & 49.7 \\ \hline
+trec & roberta-large & DonaldTrump & 66.8 \\ \hline
+{Yelp\footnotemark} & roberta-large & Absolutely & 90.4 \\ \hline
+\end{tabular}
+\caption{\label{tab:2018} Comparison of accuracy for different prompts and different datasets.}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/eval_score_2018}
+    \caption{The evaluation accuracy of the model over 200 epochs.}
+    \label{fig:eval2018}
+\end{figure}
+
+\footnotetext{Own implementation which was run for 200 epochs}
 Cao et al.~\cite{cao2020expertise} reimplement five state-of-the-art models from prior text simplification (TS) and style transfer (ST) studies on both MSD and SimpWiki datasets. The models used are OpenNMT+PT~\cite{klein-etal-2017-opennmt}, UNTS~\cite{sheang-saggion-2021-controllable}, ControlledGen~\cite{hu2018controlled}, DeleteAndRetrieve~\cite{li-etal-2018-delete} and StyleTransformer~\cite{dai-etal-2019-style}. The results demonstrate that the expertise style transfer task is difficult and requires more advanced methodologies than typical style transfer tasks. The basic model outperforms other methods, although it can be improved. The authors then perform a human evaluation research to examine the quality of the generated sentences and discover that the transferred sentences are more layman-like while keeping the content of the expert-written words.
 
 
@@ -203,7 +227,10 @@ We run the model for 1000 epochs to reduce the training time of the model and co
 Laugier et al.~\cite{laugier2021civil} want to reduce the negative effects of toxic language in online groups by rephrasing toxic communications in a more respectful and civil way. The suggested method is based on a language transformer model that has already been trained and improved using a large dataset of toxic and civil language pairings. The writers use a contrastive learning goal to get the model to come up with rephrases that are both polite and have the same meaning as the offensive original message. The results of the experiments show that the proposed method is more natural and polite than some other ways of rephrasing that are used today. The authors also do an evaluation study on people, which shows that the reworded mean words are seen as more polite and respectful. Overall, the suggested method is a promising way to reduce the negative effects of toxic language in online communities by automatically rephrasing toxic messages in respectful and civil language. This could make the Internet a more welcoming place for everyone. The results showed that the proposed model achieved state-of-the-art performance in terms of fluency and civility while maintaining competitive effectiveness in terms of toxicity reduction. Specifically, the proposed model achieved a 26.6\% reduction in toxicity on the Civil Comments dataset while maintaining a fluency score of 3.56 out of 4, which is the highest among the compared models. Additionally, the authors conducted a human evaluation, which showed that the proposed model generated more civil and polite rephrases compared to the baseline models.
 
 \section{Conclusion}
+\label{sec:conclusion}
 
+The main reason for doing the study in this work was the recent progress made in text style transfer using deep learning. A systematic review and implementation of the research spanning across the previous decade shows the trends that seemed to hold true across studies as well as the differences and variations in how deep learning is used to spread styles. This review focuses on how encoder-decoder-based designs still rule the field, even though Generative Adversarial Networks have been used to move toward adversarial learning. Even though it seems like choosing one deep neural network over another has nothing to do with style, researchers always have to find a way to balance the trade-offs between the complexity of a model and the predicted performance gains added by extra parts (like a classifier or a discriminator). The review is based on the key stages of the style transfer process and the different research methods that have been used at each step. Transfer learning and multitask learning studies are the opportunities that could make further progress possible. Interpretability is a recurring challenge that is shared across respective fields – a better understanding of what stylistic indicators are captured and learned by neural models might elucidate the nature of stylistic
+variations in language.
 
 \ignore{
 % Elaborate 
