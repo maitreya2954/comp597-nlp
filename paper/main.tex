@@ -174,6 +174,34 @@ Cao et al.~\cite{cao2020expertise} reimplement five state-of-the-art models from
 
 Kashyap et al.~\cite{kashyap2022different} improve the unsupervised attribute transfer by enforcing invariances via explicit constraints. They notice the lack of mechanisms in current methods in text attribute transfer to enforce such constraints between source and the transferred sentence. The authors propose a seq2seq model to encode and decode the text sequences using Adversarially Regularized Auto-encoder (ARAE)~\cite{zhao2018adversarially} which are the auto-encoder variant of Generative Adversarial Networks (GAN). ARAE's have been widely used in text generation and text modeling. The authors test their approach on sentiment, politeness, and formality style transfer tasks. Their model outperforms baseline methods in content preservation and style transfer. The authors further analyze their model's learnt representations, showing that it learns a style-agnostic representation of input sentences independent of the target sentence's style. This analysis illuminates their technique's mechanics and its versatility.
 
+We run the model for 1000 epochs to reduce the training time of the model and compared the results with those of the authors who have run the model for 12000 epochs in the Table~\ref{tab:kashyap}. We can see that the implementation scores are comparatively lower than the authors' run scores. However, the model is really good in detecting the style are transferring them to the texts. Figure~\ref{fig:evalkashyap} indicates the improvement in the accuracy of the model over 1000 epochs.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+ & \textbf{Implementation} & \textbf{Authors} \\ \hline
+\textbf{Content} & 74.5 & 33.4 \\ \hline
+\textbf{Style} & 94.3 & 96.0 \\ \hline
+\textbf{Fluency} & 89.1 & 94.4 \\ \hline
+\textbf{Joint} & 62.2 & 28.6 \\ \hline
+\textbf{GM} & 85.5 & 67.1 \\ \hline
+\textbf{BLEU} & 25.7 & 8.7 \\ \hline
+\textbf{BERTScore} & 60.1 & 32.4 \\ \hline
+\textbf{PPL} & 33.4 & 38.8 \\ \hline
+\end{tabular}
+\caption{\label{tab:kashyap} Comparison of different scores of styles}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/eval_accuracy_kashyap}
+    \caption{The evaluation accuracy of the model over 1000 epochs.}
+    \label{fig:evalkashyap}
+\end{figure}
+
+Laugier et al.~\cite{laugier2021civil} want to reduce the negative effects of toxic language in online groups by rephrasing toxic communications in a more respectful and civil way. The suggested method is based on a language transformer model that has already been trained and improved using a large dataset of toxic and civil language pairings. The writers use a contrastive learning goal to get the model to come up with rephrases that are both polite and have the same meaning as the offensive original message. The results of the experiments show that the proposed method is more natural and polite than some other ways of rephrasing that are used today. The authors also do an evaluation study on people, which shows that the reworded mean words are seen as more polite and respectful. Overall, the suggested method is a promising way to reduce the negative effects of toxic language in online communities by automatically rephrasing toxic messages in respectful and civil language. This could make the Internet a more welcoming place for everyone. The results showed that the proposed model achieved state-of-the-art performance in terms of fluency and civility while maintaining competitive effectiveness in terms of toxicity reduction. Specifically, the proposed model achieved a 26.6\% reduction in toxicity on the Civil Comments dataset while maintaining a fluency score of 3.56 out of 4, which is the highest among the compared models. Additionally, the authors conducted a human evaluation, which showed that the proposed model generated more civil and polite rephrases compared to the baseline models.
+
 \section{Conclusion}
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -120,6 +120,12 @@ Shibamouli Lahiri, Prasenjit Mitra, and Xiaofei Lu.
   formality score.
 \newblock In \emph{International Conference on Intelligent Text Processing and
   Computational Linguistics}, pages 446--457. Springer, 2011.
+
+\bibitem[Laugier et~al.(2021)Laugier, Pavlopoulos, Sorensen, and
+  Dixon]{laugier2021civil}
+Leo Laugier, John Pavlopoulos, Jeffrey Sorensen, and Lucas Dixon.
+\newblock Civil rephrases of toxic texts with self-supervised transformers,
+  2021.
 
 \bibitem[Li et~al.(2018)Li, Jia, He, and Liang]{li-etal-2018-delete}
 Juncen Li, Robin Jia, He~He, and Percy Liang.

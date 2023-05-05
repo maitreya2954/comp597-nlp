@@ -5,45 +5,45 @@ The style file: plainnat.bst
 Database file #1: main.bib
 Warning--empty journal in kiesling1998language
 Warning--there's a number but no series in labov1972sociolinguistic
-You've used 32 entries,
+You've used 33 entries,
             2773 wiz_defined-function locations,
-            777 strings with 12002 characters,
-and the built_in function-call counts, 17755 in all, are:
-= -- 1615
-> -- 1054
+            780 strings with 12151 characters,
+and the built_in function-call counts, 18203 in all, are:
+= -- 1649
+> -- 1093
 < -- 29
-+ -- 355
-- -- 322
-* -- 1378
-:= -- 2595
-add.period$ -- 116
-call.type$ -- 32
-change.case$ -- 199
-chr.to.int$ -- 31
-cite$ -- 66
-duplicate$ -- 845
-empty$ -- 1407
-format.name$ -- 366
-if$ -- 3876
++ -- 368
+- -- 334
+* -- 1416
+:= -- 2664
+add.period$ -- 118
+call.type$ -- 33
+change.case$ -- 206
+chr.to.int$ -- 32
+cite$ -- 68
+duplicate$ -- 861
+empty$ -- 1440
+format.name$ -- 379
+if$ -- 3968
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 31
-newline$ -- 177
-num.names$ -- 130
-pop$ -- 465
+newline$ -- 181
+num.names$ -- 134
+pop$ -- 483
 preamble$ -- 1
-purify$ -- 170
+purify$ -- 176
 quote$ -- 0
-skip$ -- 694
+skip$ -- 711
 stack$ -- 0
-substring$ -- 641
-swap$ -- 206
+substring$ -- 643
+swap$ -- 207
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 337
+type$ -- 348
 warning$ -- 2
-while$ -- 150
+while$ -- 153
 width$ -- 0
-write$ -- 444
+write$ -- 454
 (There were 2 warnings)
